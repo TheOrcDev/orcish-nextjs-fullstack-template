@@ -5,6 +5,24 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@prisma/client':
+    specifier: 5.12.1
+    version: 5.12.1(prisma@5.12.1)
+  '@tanstack/react-query':
+    specifier: ^5.29.2
+    version: 5.29.2(react@18.2.0)
+  '@trpc/client':
+    specifier: 11.0.0-rc.340
+    version: 11.0.0-rc.340(@trpc/server@11.0.0-rc.340)
+  '@trpc/next':
+    specifier: 11.0.0-rc.340
+    version: 11.0.0-rc.340(@tanstack/react-query@5.29.2)(@trpc/client@11.0.0-rc.340)(@trpc/react-query@11.0.0-rc.340)(@trpc/server@11.0.0-rc.340)(next@14.2.1)(react-dom@18.2.0)(react@18.2.0)
+  '@trpc/react-query':
+    specifier: 11.0.0-rc.340
+    version: 11.0.0-rc.340(@tanstack/react-query@5.29.2)(@trpc/client@11.0.0-rc.340)(@trpc/server@11.0.0-rc.340)(react-dom@18.2.0)(react@18.2.0)
+  '@trpc/server':
+    specifier: 11.0.0-rc.340
+    version: 11.0.0-rc.340
   next:
     specifier: 14.2.1
     version: 14.2.1(react-dom@18.2.0)(react@18.2.0)
@@ -14,6 +32,9 @@ dependencies:
   react-dom:
     specifier: ^18
     version: 18.2.0(react@18.2.0)
+  zod:
+    specifier: ^3.22.4
+    version: 3.22.4
 
 devDependencies:
   '@types/node':
@@ -40,6 +61,9 @@ devDependencies:
   postcss:
     specifier: ^8
     version: 8.4.38
+  prisma:
+    specifier: ^5.12.1
+    version: 5.12.1
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.3
@@ -284,6 +308,46 @@ packages:
     dev: true
     optional: true
 
+  /@prisma/client@5.12.1(prisma@5.12.1):
+    resolution: {integrity: sha512-6/JnizEdlSBxDIdiLbrBdMW5NqDxOmhXAJaNXiPpgzAPr/nLZResT6MMpbOHLo5yAbQ1Vv5UU8PTPRzb0WIxdA==}
+    engines: {node: '>=16.13'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      prisma: 5.12.1
+    dev: false
+
+  /@prisma/debug@5.12.1:
+    resolution: {integrity: sha512-kd/wNsR0klrv79o1ITsbWxYyh4QWuBidvxsXSParPsYSu0ircUmNk3q4ojsgNc3/81b0ozg76iastOG43tbf8A==}
+
+  /@prisma/engines-version@5.12.0-21.473ed3124229e22d881cb7addf559799debae1ab:
+    resolution: {integrity: sha512-6yvO8s80Tym61aB4QNtYZfWVmE3pwqe807jEtzm8C5VDe7nw8O1FGX3TXUaXmWV0fQTIAfRbeL2Gwrndabp/0g==}
+
+  /@prisma/engines@5.12.1:
+    resolution: {integrity: sha512-HQDdglLw2bZR/TXD2Y+YfDMvi5Q8H+acbswqOsWyq9pPjBLYJ6gzM+ptlTU/AV6tl0XSZLU1/7F4qaWa8bqpJA==}
+    requiresBuild: true
+    dependencies:
+      '@prisma/debug': 5.12.1
+      '@prisma/engines-version': 5.12.0-21.473ed3124229e22d881cb7addf559799debae1ab
+      '@prisma/fetch-engine': 5.12.1
+      '@prisma/get-platform': 5.12.1
+
+  /@prisma/fetch-engine@5.12.1:
+    resolution: {integrity: sha512-qSs3KcX1HKcea1A+hlJVK/ljj0PNIUHDxAayGMvgJBqmaN32P9tCidlKz1EGv6WoRFICYnk3Dd/YFLBwnFIozA==}
+    dependencies:
+      '@prisma/debug': 5.12.1
+      '@prisma/engines-version': 5.12.0-21.473ed3124229e22d881cb7addf559799debae1ab
+      '@prisma/get-platform': 5.12.1
+
+  /@prisma/get-platform@5.12.1:
+    resolution: {integrity: sha512-pgIR+pSvhYHiUcqXVEZS31NrFOTENC9yFUdEAcx7cdQBoZPmHVjtjN4Ss6NzVDMYPrKJJ51U14EhEoeuBlMioQ==}
+    dependencies:
+      '@prisma/debug': 5.12.1
+
   /@rushstack/eslint-patch@1.10.2:
     resolution: {integrity: sha512-hw437iINopmQuxWPSUEvqE56NCPsiU8N4AYtfHmJFckclktzK9YQJieD3XkDCDH4OjL+C7zgPUh73R/nrcHrqw==}
     dev: true
@@ -297,6 +361,72 @@ packages:
     dependencies:
       '@swc/counter': 0.1.3
       tslib: 2.6.2
+    dev: false
+
+  /@tanstack/query-core@5.29.0:
+    resolution: {integrity: sha512-WgPTRs58hm9CMzEr5jpISe8HXa3qKQ8CxewdYZeVnA54JrPY9B1CZiwsCoLpLkf0dGRZq+LcX5OiJb0bEsOFww==}
+    dev: false
+
+  /@tanstack/react-query@5.29.2(react@18.2.0):
+    resolution: {integrity: sha512-nyuWILR4u7H5moLGSiifLh8kIqQDLNOHGuSz0rcp+J75fNc8aQLyr5+I2JCHU3n+nJrTTW1ssgAD8HiKD7IFBQ==}
+    peerDependencies:
+      react: ^18.0.0
+    dependencies:
+      '@tanstack/query-core': 5.29.0
+      react: 18.2.0
+    dev: false
+
+  /@trpc/client@11.0.0-rc.340(@trpc/server@11.0.0-rc.340):
+    resolution: {integrity: sha512-q2ecZW58LM9pKpzRt+um9Jh33Nmjt7qDZu3xsjMFD61QLE6M/Tply7lC02iqZzrXzTGxR0w2+dLdkkrSlITOKQ==}
+    peerDependencies:
+      '@trpc/server': 11.0.0-rc.340+d1652d1bc
+    dependencies:
+      '@trpc/server': 11.0.0-rc.340
+    dev: false
+
+  /@trpc/next@11.0.0-rc.340(@tanstack/react-query@5.29.2)(@trpc/client@11.0.0-rc.340)(@trpc/react-query@11.0.0-rc.340)(@trpc/server@11.0.0-rc.340)(next@14.2.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-eMjVxNruE0ZdpoSIuOyjuM38Mf9CgXVgpnbFt+mp+hasJQpUlHIUj+EVuoAs+KqYo+9V/LBqIZNs774vgNf9MQ==}
+    peerDependencies:
+      '@tanstack/react-query': ^5.25.0
+      '@trpc/client': 11.0.0-rc.340+d1652d1bc
+      '@trpc/react-query': 11.0.0-rc.340+d1652d1bc
+      '@trpc/server': 11.0.0-rc.340+d1652d1bc
+      next: '*'
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    peerDependenciesMeta:
+      '@tanstack/react-query':
+        optional: true
+      '@trpc/react-query':
+        optional: true
+    dependencies:
+      '@tanstack/react-query': 5.29.2(react@18.2.0)
+      '@trpc/client': 11.0.0-rc.340(@trpc/server@11.0.0-rc.340)
+      '@trpc/react-query': 11.0.0-rc.340(@tanstack/react-query@5.29.2)(@trpc/client@11.0.0-rc.340)(@trpc/server@11.0.0-rc.340)(react-dom@18.2.0)(react@18.2.0)
+      '@trpc/server': 11.0.0-rc.340
+      next: 14.2.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@trpc/react-query@11.0.0-rc.340(@tanstack/react-query@5.29.2)(@trpc/client@11.0.0-rc.340)(@trpc/server@11.0.0-rc.340)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-3c+KWh3+KN+T0gBKSnxzGfrHlX1NRK5u+v4BqFWLTBg0ADi2eVOgSpTaToF/WEea616kacmPh5ptJeK8SmyBKQ==}
+    peerDependencies:
+      '@tanstack/react-query': ^5.25.0
+      '@trpc/client': 11.0.0-rc.340+d1652d1bc
+      '@trpc/server': 11.0.0-rc.340+d1652d1bc
+      react: '>=18.2.0'
+      react-dom: '>=18.2.0'
+    dependencies:
+      '@tanstack/react-query': 5.29.2(react@18.2.0)
+      '@trpc/client': 11.0.0-rc.340(@trpc/server@11.0.0-rc.340)
+      '@trpc/server': 11.0.0-rc.340
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /@trpc/server@11.0.0-rc.340:
+    resolution: {integrity: sha512-fKzFeAzFbsezC8Jx6gIy4AjlzNvQy4aFc2LT0qIq7hNWYCkuv3gQ7ROgcIF4dUI0rfPC3Gt/y8PQjE+GayAhvA==}
     dev: false
 
   /@types/json5@0.0.29:
@@ -2405,6 +2535,14 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
+  /prisma@5.12.1:
+    resolution: {integrity: sha512-SkMnb6wyIxTv9ACqiHBI2u9gD6y98qXRoCoLEnZsF6yee5Qg828G+ARrESN+lQHdw4maSZFFSBPPDpvSiVTo0Q==}
+    engines: {node: '>=16.13'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 5.12.1
+
   /prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
     dependencies:
@@ -3122,3 +3260,7 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  /zod@3.22.4:
+    resolution: {integrity: sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==}
+    dev: false
