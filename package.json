@@ -12,29 +12,29 @@
     "commit": "./node_modules/cz-customizable/standalone.js"
   },
   "dependencies": {
-    "@prisma/client": "5.12.1",
-    "@tanstack/react-query": "^5.29.2",
+    "@prisma/client": "5.13.0",
+    "@tanstack/react-query": "^5.32.1",
     "@trpc/client": "11.0.0-rc.340",
     "@trpc/next": "11.0.0-rc.340",
     "@trpc/react-query": "11.0.0-rc.340",
     "@trpc/server": "11.0.0-rc.340",
-    "next": "14.2.1",
-    "react": "^18",
-    "react-dom": "^18",
-    "zod": "^3.22.4"
+    "next": "14.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zod": "^3.23.5"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.3.1",
+    "@types/react-dom": "^18.3.0",
     "cz-customizable": "^7.0.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.1",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.3",
     "husky": "^9.0.11",
-    "postcss": "^8",
-    "prisma": "^5.12.1",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "postcss": "^8.4.38",
+    "prisma": "^5.13.0",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
   },
   "config": {
     "cz-customizable": {
